@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <img src="images/logo.svg" alt="logo">
+
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+      <img src="images/icon-hamburger.svg" id="hamburgerIcon" alt="hamburger Icon">
+    </nav>
+    <div id="mobileMenu">
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <h1>We are creatives</h1>
+
+    <img src="images/icon-arrow-down.svg" id="downArrow" alt="arrow down icon">
+  </header>
+
+  <main>
+
+    <div class="rowItem" id="firstRow">
+      <div class="textContainer">
+        <h2>Transform your brand</h2>
+        <p class="description">
+          We are a full-service creative agency specializing in helping brands grow fast. 
+  Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+
+        <p class="learnMore" id="learnMoreYellow">Learn more</p>
+      </div>
+      <div class="imageContainer">
+        <img src="images/desktop/image-transform.jpg" alt="egg image">
+      </div>
+    </div>
+
+    <div class="rowItem" id="secondRow">
+      <div class="imageContainer">
+        <img src="images/desktop/image-stand-out.jpg" alt="stand out">
+      </div>
+
+      <div class="textContainer">
+        <h2>Stand out to the right audience</h2>
+        <p class="description">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        </p>
+
+        <p class="learnMore" id="learnMoreRed">Learn more</p>
+      </div>
+    </div>
+
+    <div class="rowItem">
+      <div id="graphicDesignContainer">
+        <img src="images/desktop/image-graphic-design.jpg" alt="graphic design image">
+        
+        <div class="textWithBackground">
+          <h3>Graphic Design</h3>
+          <p>  
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          </p>
+        </div>
+      </div>
+
+      <div id="photographyContainer">
+        <img src="images/desktop/image-photography.jpg" alt="photography image">
+
+        <div class="textWithBackground">
+          <h3>Photography</h3>
+          <p> 
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="testimonials">
+      <h3>Client testimonials</h3>
+
+      <div id="clients">
+        <div class="clientItem">
+          <img src="images/image-emily.jpg" alt="emily">
+          <p class="clientComment">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
+
+          <h4>Emily R.</h4>
+          <p class="clientTitle">Marketing Director</p>
+        </div>
+
+        <div class="clientItem">
+          <img src="images/image-thomas.jpg" alt="thomas">
+          <p class="clientComment">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
+
+          <h4>Thomas S.</h4>
+          <p class="clientTitle">Chief Operating Officer</p>
+        </div>
+
+        <div class="clientItem">
+          <img src="images/image-jennie.jpg" alt="jennie">
+          <p class="clientComment">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+
+          <h4>Jennie F.</h4>
+          <p class="clientTitle">Business Owner</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="rowOfImages">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milkbottles">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="orange">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="cone">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes">
+    </div>
+
+  </main>
+
+  <footer>
+    <img src="images/logo.svg" id="logo" alt="">
+    <ul>
+      <li>About</li>
+      <li>Services</li>
+      <li>Projects</li>
+    </ul>
+
+    <div id="social">
+      <img src="images/icon-facebook.svg" alt="facebook">
+      <img src="images/icon-instagram.svg" alt="instagram">
+      <img src="images/icon-twitter.svg" alt="twitter">
+      <img src="images/icon-pinterest.svg" alt="icon-pinterest">
+    </div>
+
+    <div id="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Andreas Siachos</a>.
+    </div>
+  </footer>
+
+  <button id="topButton">Top</button>
+
+  
+
+  <script src="app.js"></script>
+</body>
+</html>

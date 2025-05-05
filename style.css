@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+#learnMoreYellow {
+  border-bottom: 5px solid hsla(51, 100%, 49%, 0.4);
+}
+#learnMoreYellow:hover {
+  border-color: hsl(51, 100%, 49%);
+}
+
+#learnMoreRed {
+  border-bottom: 5px solid hsla(7, 99%, 70%, 0.4);
+}
+#learnMoreRed:hover {
+  border-color: hsl(7, 99%, 70%);
+}
+
+#topButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url("images/desktop/image-header.jpg");
+  background-size: cover;
+  height: 700px;
+  padding-top: 40px;
+}
+header nav {
+  width: 93%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  color: hsl(0, 100%, 100%);
+}
+header nav ul li {
+  cursor: pointer;
+}
+header nav ul li:not(:last-child) {
+  margin-right: 25px;
+}
+header nav ul li:last-child {
+  background-color: hsl(0, 100%, 100%);
+  color: black;
+  padding: 10px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+}
+header nav ul li:last-child:hover {
+  background-color: #6fcfff;
+  color: hsl(0, 100%, 100%);
+}
+header nav #hamburgerIcon {
+  display: none;
+}
+header #mobileMenu {
+  background-color: hsl(0, 100%, 100%);
+  padding: 20px 0;
+  width: 95%;
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header #mobileMenu ul {
+  text-align: center;
+  list-style-type: none;
+}
+header #mobileMenu ul li {
+  color: hsl(232, 10%, 55%);
+}
+header #mobileMenu ul li:not(:first-child) {
+  margin-top: 15px;
+}
+header #mobileMenu ul li:last-child {
+  background-color: hsl(51, 100%, 49%);
+  color: hsl(212, 27%, 19%);
+  width: 25%;
+  padding: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+header h1 {
+  color: hsl(0, 100%, 100%);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Fraunces", sans-serif;
+  margin-top: 130px;
+}
+header #downArrow {
+  margin: 80px auto;
+  cursor: pointer;
+}
+
+main .rowItem {
+  display: flex;
+}
+main .rowItem .textContainer, main .rowItem .imageContainer {
+  width: 50%;
+}
+main .rowItem .textContainer {
+  padding: 125px;
+}
+main .rowItem .textContainer h2 {
+  font-size: 30px;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  width: 82%;
+  color: hsl(212, 27%, 19%);
+}
+main .rowItem .textContainer .description {
+  margin-top: 50px;
+  color: hsl(232, 10%, 55%);
+  line-height: 20px;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+}
+main .rowItem .textContainer .learnMore {
+  margin-top: 45px;
+  text-transform: uppercase;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  width: 35%;
+  text-align: center;
+  cursor: pointer;
+}
+main .rowItem .imageContainer img {
+  width: 100%;
+  height: 100%;
+}
+main .rowItem #graphicDesignContainer, main .rowItem #photographyContainer {
+  width: 50%;
+  position: relative;
+}
+main .rowItem #graphicDesignContainer img, main .rowItem #photographyContainer img {
+  width: 100%;
+}
+main .rowItem #graphicDesignContainer .textWithBackground, main .rowItem #photographyContainer .textWithBackground {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+}
+main .rowItem #graphicDesignContainer .textWithBackground h3, main .rowItem #photographyContainer .textWithBackground h3 {
+  font-size: 25px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+main .rowItem #graphicDesignContainer .textWithBackground p, main .rowItem #photographyContainer .textWithBackground p {
+  width: 50%;
+  margin: 30px auto 0 auto;
+  font-weight: 600;
+}
+main .rowItem #graphicDesignContainer .textWithBackground {
+  color: hsl(167, 40%, 24%);
+}
+main .rowItem #photographyContainer .textWithBackground {
+  color: hsl(198, 62%, 26%);
+}
+main #testimonials {
+  margin-top: 150px;
+}
+main #testimonials h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: hsl(232, 10%, 55%);
+  font-family: "Fraunces", serif;
+}
+main #testimonials #clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+main #testimonials #clients .clientItem {
+  width: 30%;
+}
+main #testimonials #clients .clientItem img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: auto;
+}
+main #testimonials #clients .clientItem .clientComment {
+  text-align: center;
+  width: 80%;
+  margin: 40px auto 0 auto;
+  color: hsl(213, 9%, 39%);
+  font-weight: 600;
+}
+main #testimonials #clients .clientItem h4 {
+  margin-top: 50px;
+  text-align: center;
+}
+main #testimonials #clients .clientItem .clientTitle {
+  text-align: center;
+  margin-top: 6px;
+  color: hsl(232, 10%, 55%);
+  font-weight: 600;
+}
+main #rowOfImages {
+  margin-top: 150px;
+  display: flex;
+}
+main #rowOfImages img {
+  width: 25%;
+}
+
+footer {
+  background-color: #90d4c5;
+  padding: 65px 0;
+}
+footer #logo {
+  margin: auto;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 35px;
+}
+footer ul li {
+  color: hsl(167, 34%, 41%);
+  cursor: pointer;
+}
+footer ul li:not(:last-child) {
+  margin-right: 27px;
+}
+footer ul li:hover {
+  color: hsl(0, 100%, 100%);
+}
+footer #social {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+footer #social img {
+  cursor: pointer;
+}
+footer #social img:not(:last-child) {
+  margin-right: 19px;
+}
+footer #attribution {
+  margin-top: 90px;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+}
+footer #attribution a, footer #attribution a:visited {
+  color: hsl(167, 34%, 41%);
+}
+
+@media (max-width: 768px) {
+  #topButton {
+    display: none;
+  }
+  header {
+    background-image: url("images/mobile/image-header.jpg");
+    background-position: center;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav #hamburgerIcon {
+    display: block;
+  }
+  main .rowItem {
+    flex-direction: column;
+  }
+  main .rowItem .textContainer, main .rowItem .imageContainer {
+    width: 100%;
+  }
+  main .rowItem .textContainer {
+    padding: 25px;
+  }
+  main .rowItem .textContainer h2, main .rowItem .textContainer .description, main .rowItem .textContainer .learnMore {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .rowItem .textContainer h2 {
+    text-align: center;
+  }
+  main .rowItem .textContainer .description {
+    text-align: center;
+    width: 70%;
+  }
+  main .rowItem #graphicDesignContainer, main .rowItem #photographyContainer {
+    width: 100%;
+  }
+  main .rowItem #graphicDesignContainer .textWithBackground, main .rowItem #photographyContainer .textWithBackground {
+    bottom: 30px;
+  }
+  main #firstRow {
+    flex-direction: column-reverse;
+  }
+  main #secondRow {
+    flex-direction: column;
+  }
+  main #testimonials {
+    margin-top: 50px;
+  }
+  main #testimonials #clients {
+    margin-top: 70px;
+    flex-direction: column;
+  }
+  main #testimonials #clients .clientItem {
+    width: 100%;
+  }
+  main #testimonials #clients .clientItem:not(:first-child) {
+    margin-top: 35px;
+  }
+  main #testimonials #clients .clientItem .clientComment {
+    margin: 20px auto 0 auto;
+  }
+  main #testimonials #clients .clientItem h4 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  main #rowOfImages {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  main #rowOfImages img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
