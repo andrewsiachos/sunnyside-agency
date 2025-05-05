@@ -275,7 +275,7 @@ footer #attribution a, footer #attribution a:visited {
 
 @media (max-width: 768px) {
   #topButton {
-    display: none;
+    padding: 10px;
   }
   header {
     background-image: url("images/mobile/image-header.jpg");
